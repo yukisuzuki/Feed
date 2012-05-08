@@ -1,34 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:admin="http://webns.net/mvcb/"
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.zrssfeed.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#feed').rssfeed('http://black-flag.net/feed',{
+		limit: 5
+	});
+});
+</script>
+<body>
 
-	<channel>
-		<title>サイトのタイトル</title>
-		<link>サイトのRSSのURL</link>
-		<description>サイトの内容</description>
-		<dc:language>ja</dc:language>
-		<dc:creator>サイトの作者名</dc:creator>
-		<dc:date>RSSの最終更新日時</dc:date>
-		
-		<item>
-		<title>記事1のタイトル</title>
-		<link>記事1のURL</link>
-		<description>記事1の内容</description>
-		<dc:subject>記事1のカテゴリ名</dc:subject>
-		<dc:creator>記事1の作者名</dc:creator> 
-		<dc:date>記事1の作成日時</dc:date>
-		</item>
+<div id="feed"></div>
 
-		<item>
-		<title>記事2のタイトル</title>
-		<link>記事2のURL</link>
-		<description>記事2の内容</description>
-		<dc:subject>記事2のカテゴリ名</dc:subject>
-		<dc:creator>記事2の作者名</dc:creator> 
-		<dc:date>記事2の作成日時</dc:date>
-		</item>
-	</channel>
-</rss>
+
+</body>
