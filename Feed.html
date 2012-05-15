@@ -1,16 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html>
+
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.zrssfeed.js"></script>
+<script type="text/javascript" src="jquery.zrssfeed.js"></script>
 <script type="text/javascript">
 $(function(){
-	$('#feed').rssfeed('http://black-flag.net/feed',{
+	$('#feed').rssfeed('http://momo-s.com/rss/banana.rdf ',{
 		limit: 5
 	});
 });
 </script>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Feed</title>
+</head>
+
 <body>
-
 <div id="feed"></div>
-
-
 </body>
+</html>
