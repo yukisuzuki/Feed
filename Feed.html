@@ -5,10 +5,17 @@
 <script type="text/javascript" src="jquery.zrssfeed.js"></script>
 <script type="text/javascript">
 $(function(){
-	$('#feed').rssfeed('http://momo-s.com/rss/banana.rdf ',{
+	$('#feed').rssfeed('http://suomi-neito.com/rss ',{
 		limit: 5
 	});
 });
+$(function(){
+	setInterval( function() {
+			$( "#new_article>li:last-child" ).css({height:'0px'});
+			$( "#new_article>li:last-child" ).prependTo( "#new_article" );		
+			$( "#new_article>li:first-child" ).animate({height:'25px'}, 'slow');
+			}, 3600 );
+		});
 </script>
 
 <head>
