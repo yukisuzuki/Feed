@@ -1,0 +1,56 @@
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>スクロールフィード</title>
+<meta name="description" content="javascriptで作った縦スクロールのサンプルです。" />
+<meta name="keywords" content="javascript,自動再生,サンプル,画像スライド" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<meta name="author" content="shinbo.org" />
+<meta name="copyright" content="shinbo.org" />
+<link href="index.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.zrssfeed.js"></script>
+<script type="text/javascript" src="java.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#feed').rssfeed('http://suomi-neito.com/rss ',{
+		limit: 5
+	});
+});
+</script>
+
+<style>
+#feed{
+	background-color:#F66;
+	}
+</style>
+
+</head>
+<body>
+
+
+	<div id="Topbtn"></div>
+	<div id="ViewArea">
+		<div id="ScrollArea">			
+			<ul>
+
+           
+
+	<MARQUEE>
+    <li>
+    <div id="feed">
+    
+    </div>
+    
+    </li>
+    </MARQUEE>
+
+            
+			</ul>		
+		</div>		
+	</div>
+	<div id="Bottombtn"></div>
+</div>
+</body>
+</html>

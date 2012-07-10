@@ -3,19 +3,17 @@
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
 <script type="text/javascript" src="jquery.zrssfeed.js"></script>
+<script type="text/javascript" src="java.js"></script>
+
 <script type="text/javascript">
+
+
 $(function(){
 	$('#feed').rssfeed('http://suomi-neito.com/rss ',{
 		limit: 5
 	});
 });
-$(function(){
-	setInterval( function() {
-			$( "#new_article>li:last-child" ).css({height:'0px'});
-			$( "#new_article>li:last-child" ).prependTo( "#new_article" );		
-			$( "#new_article>li:first-child" ).animate({height:'25px'}, 'slow');
-			}, 3600 );
-		});
+
 </script>
 
 <head>
@@ -28,20 +26,20 @@ $(function(){
 #hako{
 	height:150px;
 	width:150px;
+	background-color:#C9C;
+	
 	}
 
-/*#feed{
+#feed{
 	font-size:12px;
-	overflow:auto;
+	overflow:hidden;
 	width:160px;
-	height:150px;
-	}*/
+	height:100%;
+	}
 </style>
 <body>
 <div id ="hako">
 	<div id="feed">
-<p><iframe src="http://suomi-neito.com/rss" style="width:595px;height:850px;border:none;overflow:hidden;"></iframe></p>
-
 
     </div>
 </div>
