@@ -4,7 +4,7 @@ var Speed = 1;
 //マウスをオーバーしたとき（タイマー当たりの移動 px）	
 var Speed_m = 3;
 //タイマーの設定
-var TimeInterval=25;
+var TimeInterval=1000;
 //進行方向（top、down）
 var ScrollDirection = "down";
 //
