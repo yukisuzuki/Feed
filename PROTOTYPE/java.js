@@ -4,12 +4,12 @@ var Speed = 1;
 //マウスをオーバーしたとき（タイマー当たりの移動 px）	
 var Speed_m = 3;
 //タイマーの設定
-var TimeInterval=400;
+var TimeInterval=1500;
 //進行方向（top、down）
 var ScrollDirection = "down";
 
 var ImgCount = $('#ScrollArea li').length;
-var ImgHeight = $('#ScrollArea li').outerHeight();
+var ImgHeight = $('#ScrollArea li').outerHeight(); //imgの高さ 
 //表示エリアの幅
 $('#ScrollArea').css('height',(ImgCount+2)*ImgHeight);
 //表示エリアの位置
@@ -68,7 +68,7 @@ var s=Speed;
 		set_timer();			
 	});
 
-	//右ボタン制御
+	//右ボタン制御　下ァ！
 	$('#Bottombtn').hover(function(){
 		clear_timer();
 		s= Speed_m;
@@ -82,7 +82,7 @@ var s=Speed;
 		set_timer();			
 	});
 	
-	//スクロールエリアをマウスオーバーしたとき
+	//スクロールエリアをマウスオーバーしたとき止まる・・。
 	$('#ScrollArea').hover(function(){
 		clear_timer();
 	},
